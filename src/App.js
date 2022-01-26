@@ -44,11 +44,11 @@ const App = () => {
           path="/character/:id"
           render={(props) => <Character {...props} />}
         />
-        {/* <Route exact path="/*">
+        <Route exact path="/*">
           <div className="container">
             <Error />
           </div>
-        </Route> */}
+        </Route>
       </Switch>
     </Router>
   );
