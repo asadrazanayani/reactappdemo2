@@ -32,7 +32,7 @@ const App = () => {
   return (
     <Router>
       <Switch>
-        <Route exact path="/index">
+        <Route exact path="/">
           <div className="container">
             <Header />
             <Search getQuery={(q) => setQuery(q)} />
@@ -44,11 +44,11 @@ const App = () => {
           path="/character/:id"
           render={(props) => <Character {...props} />}
         />
-        <Route path="/*">
+        {/* <Route exact path="/*">
           <div className="container">
             <Error />
           </div>
-        </Route>
+        </Route> */}
       </Switch>
     </Router>
   );
