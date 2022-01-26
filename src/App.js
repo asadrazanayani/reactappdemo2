@@ -44,7 +44,7 @@ const App = () => {
           path="/character/:id"
           render={(props) => <Character {...props} />}
         />
-        <Route exact path="/*">
+        <Route path="/*">
           <div className="container">
             <Error />
           </div>
