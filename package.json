@@ -1,6 +1,5 @@
 {
-  "name": "reactappdemo2",
-  "homepage": "https://keke1946.github.io/reactappdemo2",
+  "name": "my-app",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

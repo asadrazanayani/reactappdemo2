@@ -8,10 +8,13 @@ import "./App.css";
 import Error from "./components/characters/Error";
 import Character from "./components/characters/Character";
 
+export const QueryContext = React.createContext();
+
 const App = () => {
   const [items, setItems] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
   const [query, setQuery] = useState("");
+
 
   useEffect(() => {
     const fetchItems = async () => {
@@ -29,7 +32,10 @@ const App = () => {
     fetchItems();
   }, [query]);
 
+  console.log(query);
+
   return (
+    <QueryContext.Provider value={setQuery}>
     <Router>
       <Switch>
         <Route exact path="/">
@@ -51,6 +57,7 @@ const App = () => {
         </Route>
       </Switch>
     </Router>
+    </QueryContext.Provider>
   );
 };
 

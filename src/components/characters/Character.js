@@ -1,11 +1,17 @@
-import React from "react";
+import React, { useContext } from "react";
 import axios from "axios";
 import { useParams } from "react-router-dom";
 import {Link} from "react-router-dom";
 import Spinner from "../ui/Spinner";
 import '../../../node_modules/bootstrap/dist/css/bootstrap.min.css';
+import { QueryContext } from "../../App";
 
 function Character() {
+  let setQuery = useContext(QueryContext);
+  console.log(setQuery);
+  function resetQuery(){
+    setQuery('')
+  }
   let { id } = useParams();
   const [isLoading, setIsLoading] = React.useState(true);
   const [data, setData] = React.useState(null);
@@ -28,7 +34,7 @@ function Character() {
     <div className="card mb-3 position-absolute top-50 start-50 translate-middle" style={{maxWidth: 540}}>
       <div className="row g-0">
         <div className="col-md-4">
-          <img src={data ? data[0].img : null} class="img-fluid rounded-start" alt={`image of ${data ? data[0].name : null}`}/>
+          <img src={data ? data[0].img : null} className="img-fluid rounded-start" alt={`image of ${data ? data[0].name : null}`}/>
         </div>
         <div className="col-md-8">
           <div className="card-body">
@@ -40,7 +46,7 @@ function Character() {
             <h4 className="card-title">Portrayed by: {data ? data[0].portrayed : null}</h4>
           </div>
         </div>
-    <Link to='/' ><button type="button" className="btn btn-success">Go Back</button></Link>
+    <Link to='/' ><button type="button" className="btn btn-success" onClick={resetQuery}>Go Back</button></Link>
       </div>
     </div>
     </div>

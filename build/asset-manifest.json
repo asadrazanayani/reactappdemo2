@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/reactappdemo2/static/css/main.0a7529b3.css",
-    "main.js": "/reactappdemo2/static/js/main.ca27bbff.js",
-    "static/media/spinner.gif": "/reactappdemo2/static/media/spinner.11d9cde8ebaeadb07ba7.gif",
-    "static/media/bg.jpg": "/reactappdemo2/static/media/bg.085908ea8f76e1ae1806.jpg",
-    "static/media/logo.png": "/reactappdemo2/static/media/logo.e6ecab4407f10ecd02bd.png",
-    "index.html": "/reactappdemo2/index.html",
-    "main.0a7529b3.css.map": "/reactappdemo2/static/css/main.0a7529b3.css.map",
-    "main.ca27bbff.js.map": "/reactappdemo2/static/js/main.ca27bbff.js.map"
+    "main.css": "/static/css/main.ec629684.css",
+    "main.js": "/static/js/main.ddb58ae3.js",
+    "static/media/spinner.gif": "/static/media/spinner.11d9cde8ebaeadb07ba7.gif",
+    "static/media/bg.jpg": "/static/media/bg.085908ea8f76e1ae1806.jpg",
+    "static/media/logo.png": "/static/media/logo.e6ecab4407f10ecd02bd.png",
+    "index.html": "/index.html",
+    "main.ec629684.css.map": "/static/css/main.ec629684.css.map",
+    "main.ddb58ae3.js.map": "/static/js/main.ddb58ae3.js.map"
   },
   "entrypoints": [
-    "static/css/main.0a7529b3.css",
-    "static/js/main.ca27bbff.js"
+    "static/css/main.ec629684.css",
+    "static/js/main.ddb58ae3.js"
   ]
 }
